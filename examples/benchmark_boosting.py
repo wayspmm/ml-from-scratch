@@ -1,10 +1,10 @@
-"""Benchmark: custom BoostingClassifier vs LightGBM.
+"""Проведем сравнение: наш BoostingClassifier vs LightGBM.
 
-Both models get identical budgets: 300 trees max, depth 4, lr 0.1,
-row subsampling 0.8, feature subsampling 0.8, early stopping on a
-validation split. Reported metric is ROC-AUC on a held-out test set.
+Обе модели имеют одинаковые бюджеты: максимум 300 деревьев, глубина 4, lr 0.1,
+субдискретизация строк 0.8, субдискретизация признаков 0.8, ранняя остановка на
+валидационном разбиении. Сообщаемое метрикой является ROC-AUC на отложенном тестовом наборе.
 
-Run:  python examples/benchmark_boosting.py
+Запуск осуществляется командой python examples/benchmark_boosting.py
 """
 import sys
 import time
